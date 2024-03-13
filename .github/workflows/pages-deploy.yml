@@ -52,6 +52,9 @@ jobs:
       - name: Setup Jekyll
         run: gem install jekyll bundler
 
+      - name: Setup Bundle
+        run: bundle
+
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
