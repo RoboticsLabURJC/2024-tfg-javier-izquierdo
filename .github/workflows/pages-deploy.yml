@@ -49,7 +49,7 @@ jobs:
           bundler-cache: true
 
       - name: Setup Jekyll
-        run: 
+        run: gem install jekyll
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
