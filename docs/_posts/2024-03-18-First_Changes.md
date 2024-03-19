@@ -4,7 +4,7 @@ date: 2024-03-18 18:00:00 +0100
 tags: [bt studio]     # TAG names should always be lowercase
 categories: [improvements, visual]
 author: javier
-img_path: /assets/lib/images/
+img_path: /assets/img/
 toc: true
 comments: true
 ---
@@ -32,3 +32,18 @@ _Before_
 
 ![After](correct_icons_vivaldi/after.png)
 _After_
+
+## Project dropdown list
+
+This allows the user to not need to memorize every single project name and just select in a more visually pleassing way the project that they want to switch to.
+
+Here is the before and after:
+
+![Before and After off](project_list/after_off.png)
+_Before and After Off_
+
+![Before On](project_list/before.png)
+_Before On_
+
+![After On](project_list/after_on.png)
+_After On_
