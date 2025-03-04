@@ -1,0 +1,44 @@
+\babel@toc {spanish}{}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Robots empleados en los almacenes de Amazon}}{2}{figure.caption.9}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Robot de reparto de la empresa Starship}}{2}{figure.caption.10}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Taxi autónomo de la empresa Waymo}}{3}{figure.caption.11}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Robot de limpieza Roomba de la empresa IRobot}}{3}{figure.caption.12}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Grafo de computación de una aplicación en ROS 2}}{4}{figure.caption.13}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Entorno simulado mediante Gazebo}}{5}{figure.caption.14}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Interfaz creada con React}}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {1.8}{\ignorespaces Página de comercio electrónico de Amazon}}{7}{figure.caption.16}%
+\contentsline {figure}{\numberline {1.9}{\ignorespaces Interfaz de Youtube}}{8}{figure.caption.17}%
+\contentsline {figure}{\numberline {1.10}{\ignorespaces Interfaz de Replit}}{9}{figure.caption.18}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Stack típico de desarrollo web}}{19}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema Modelo-Vista-Controlador}}{22}{figure.caption.21}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Cliente gráfico de Gazebo}}{28}{figure.caption.24}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Ejemplo básico de árbol de comportamiento}}{29}{figure.caption.26}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Algoritmo de un nodo tipo \textit {Sequence}}}{30}{figure.caption.28}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Algoritmo de un nodo tipo \textit {Fallback}}}{30}{figure.caption.29}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Algoritmo de un nodo tipo \textit {Parallel}}}{30}{figure.caption.30}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Comportamiento de las secuencias soportadas por BT.cpp}}{33}{figure.caption.35}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Comportamiento de los \textit {fallbacks} soportados por BT.cpp}}{33}{figure.caption.36}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Aplicación robótica básica ejecutando en RoboticsAcademy}}{39}{figure.caption.42}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Proceso de generación de aplicaciones en BT Studio}}{41}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ejecución de una aplicación robótica en un entorno dockerizado}}{42}{figure.caption.44}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Estructura de una acción en BT Studio}}{42}{figure.caption.45}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Árbol de comportamiento de ejemplo creado con BT Studio}}{43}{figure.caption.46}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Componentes de la interfaz del IDE web}}{44}{figure.caption.47}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Configuración de Django en BT Studio}}{44}{figure.caption.48}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Jerarquía de componentes en BT Studio}}{47}{figure.caption.49}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Apariencia del componente con cambios sin guardar en el proyecto}}{48}{figure.caption.52}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Apariencia del componente con tres archivos en el proyecto}}{49}{figure.caption.54}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Interfaz del editor mostrando un archivo Python}}{50}{figure.caption.56}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Editor visual de árboles con un árbol de ejemplo}}{51}{figure.caption.58}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Visor de ejecución de aplicaciones robóticas}}{53}{figure.caption.60}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Secuencia de generación de aplicaciones mediante el traductor}}{54}{figure.caption.61}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Ejecución de una aplicación robótica con el RADI de RoboticsAcademy}}{60}{figure.caption.71}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Escalera de transiciones en el RADI durante la ejecución dockerizada de una aplicación robótica}}{64}{figure.caption.73}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Árbol de comportamiento de Laser Bump and Go}}{67}{figure.caption.76}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Árbol de comportamiento de Visual Follow Person}}{69}{figure.caption.79}%
+\addvspace {10\p@ }

@@ -1,0 +1,115 @@
+\chapter{Objetivos y metodología}\label{cap:planificación}
+
+Ahora que ya se ha introducido el contexto y la motivación detrás de BT Studio, necesitamos establecer los objetivos que se van a desarrollar, así como la metodología a seguir.
+
+\section{Objetivos}
+
+El objetivo principal de este TFG es la mejora del IDE web robótico BT Studio, continuando con la filosofía \textit{open source} y con las bases que lo crearon. Este se puede dividir en los siguientes cinco subobjetivos, siendo el primero de ellos una combinación de múltiples más pequeños:  
+
+\begin{enumerate}
+
+    \item Mejora de los elementos del Frontend para mejorar la experiencia del usuario usando REACT y TS. 
+  
+    \item Adición de un monitor de ejecución en el editor de árboles de comportamiento para permitir tanto la visualización como la depuración sencilla de la aplicación robótica. 
+  
+    \item Integración con el Robotics Backend\footnote{\url{https://hub.docker.com/r/jderobot/robotics-backend}}, añadiendo la capacidad de ejecución de las aplicaciones desde el browser, usando un entorno dockerizado. 
+
+    \item Integración en Unibotics \footnote{\url{https://unibotics.org/}} para facilitar su uso y hacer que el acceso a BT Studio sea más expandido y en línea. 
+  
+    \item Generación y mejora de aplicaciones de ejemplo para demostrar las capacidades de BT Studio mejorado. Se usará la integración con el Robotics Backend para su funcionamiento. Las aplicaciones serán \textit{Laser Bump and Go}, \textit{Follow Person} y  \textit{Receptionist}.
+\end{enumerate}
+
+El cumplimiento de cada uno de estos objetivos será detallado en el capítulo \ref{cap:validacion}.
+
+\section{Metodología}
+
+El modelo de trabajo de este TFG se basa en tres puntos principales:
+
+\begin{itemize}
+    \item \textbf{Reuniones semanales con los tutores}: gracias a esto y junto con la comunicación directa usando Slack se consigue un desarrollo ágil con un feedback rápido y detallado. 
+    
+    \item \textbf{Filosofía open source}: el trabajo se realizó íntegramente en múltiples repositorios de GitHub siendo los repositorios de BT Studio\footnote{\url{https://github.com/JdeRobot/bt-studio}}, Robotics Infrastructure\footnote{\url{https://github.com/JdeRobot/RoboticsInfrastructure}} y Robotics Application Manager\footnote{\url{https://github.com/JdeRobot/RoboticsApplicationManager}} públicos y el repositorio de Unibotics privado. Durante el proceso de desarrollo se trabajó con el método tradicional en estos entornos: incidencias, parches y versiones, facilitando el uso y la colaboración con otros desarrolladores. Se recibieron varias sugerencias y preguntas de varios desarrolladores. 
+    
+    La mentalidad \textit{open source}\footnote{\url{https://opensource.org/osd/}} es básica en el sector de la robótica como ha quedado demostrado con el éxito de ROS y ROS 2. Este TFG se adhiere estrictamente a esta mentalidad, estando este texto bajo la licencia Creative Commons Attribution-ShareAlike 4.0 International y todo el código asociado bajo GPLv3 a excepción de la integración con Unibotics que por otros motivos debe quedar en privado. También es importante resaltar que se ha interactuado en gran medida con la comunidad \textit{Open Source} con, por ejemplo, la participación en el evento internacional de FOSDEM 2025\footnote{\url{https://tinyurl.com/fosdemvideobtstudio}}. 
+
+    \item \textbf{Hoja de ruta preciso}: el proyecto se desarrolló siguiendo un \textit{roadmap} claro y estructurado, organizado en distintas fases con objetivos específicos que estaban alineados con los subobjetivos explicados anteriormente. Se adoptó una metodología dinámica para guiar el desarrollo, lo que permitió una mayor flexibilidad y adaptación ante imprevistos. El trabajo se dividió en sprints coincidiendo con versiones oficiales nuevas de BT Studio, cada uno enfocado en la preparación e implementación de distintas funcionalidades y además en progresos semanales para obtener la realimentación del progreso de cada sprint. Este enfoque promovió una comunicación constante y efectiva con mis tutores y con los otros desarrolladores, permitiendo ajustes rápidos del plan y de los resultados obtenidos en cada sprint.
+\end{itemize}
+
+\section{Plan de trabajo}
+
+El desarrollo de este Trabajo de Fin de Grado se ha producido entre marzo de 2024 y febrero de 2025. La introducción de subárboles pertenecientes a la versión 0.7 de BT Studio fueron realizados por otro desarrollador en el verano de 2024 como parte del GSOC\footnote{\url{https://theroboticsclub.github.io/gsoc2024-Oscar_Martinez/}} (Google Summer Of Code). 
+
+\begin{enumerate}
+    \item \textbf{Estudio de soluciones similares y estado del arte}.
+    
+    \item \textbf{Familiarización con tecnologías de desarrollo web}: principalmete Django, JS, TS, HTML, CSS y REACT. Estas tecnologías se usan de forma conjunta con otras del ámbito de la robótica, como Behavior Trees y ROS 2, y del ámbito de \textit{DevOps}, como Docker. Las características de cada tecnología y su uso en el TFG se detallan en el capítulo \ref{cap:tecnologias}.
+
+    \item \textbf{Familiarización con el estado de BT Studio}: estudiar su funcionamiento y sus capacidades para ver posibles puntos de mejora y desarrollo.
+
+    \item \textbf{Versión 0.4}: mejora de la interfaz de usuario y solución de problemas que perjudican la experiencia del usuario con de BT Studio.  
+    \begin{itemize}
+        \item Mejoras de la interfaz, añadiendo entre otras cosas modales personalizados en vez de los estándares del navegador.
+        \item Creación de la aplicación de ejemplo Receptionist para su uso de forma local.
+        \item Creación de una página web para la documentación de BT Studio.
+        \item Solución de problemas de funcionamiento misceláneos.
+        \item Creación de plantillas para las acciones.
+    \end{itemize}
+
+    \item \textbf{Versión 0.5}: mejora del editor visual de árboles de comportamiento.
+    \begin{itemize}
+        \item Personalización de las acciones en el editor visual de árboles de comportamiento.
+        \item Añadir botones con funcionalidad adicional en el editor visual.
+        \item Creación de modales para el cambio de universos.
+    \end{itemize}
+
+    \item \textbf{Versión 0.6}: mejoras en el control de ficheros e introducción del monitor de ejecución. 
+    \begin{itemize}
+        \item Creación de un explorador de ficheros con directorios plegables.
+        \item Centralización y estandarización de los componentes de CSS.
+        \item Creación del monitor de ejecución.
+    \end{itemize}
+
+    \item \textbf{Versión 0.7}: mejoras en el monitor de ejecución e introducción de subárboles.
+    \begin{itemize}
+        \item Introducción del uso de subárboles y la composición de árboles de comportamiento.
+        \item Mejora de la personalización de acciones en el editor visual de árboles de comportamiento.
+        \item Mejora del monitor de ejecución.
+    \end{itemize}
+
+    \item \textbf{Versión 0.7.1}: monitor de ejecución para subárboles y ejecución dockerizada.
+    \begin{itemize}
+        \item Introducción de la ejecución dockerizada de BT Studio al estilo de Robotics Academy\footnote{\url{https://github.com/JdeRobot/RoboticsAcademy}}.
+        \item Introducción del soporte al Robotics Backend.
+        \item Reintroducción de los universos personalizados.
+        \item Mejora del monitor de ejecución para funcionar con subárboles.
+    \end{itemize}
+
+    \item \textbf{Versión 0.8}: solución de problemas e integración con Unibotics\footnote{\url{https://unibotics.org}}.
+    \begin{itemize}
+        \item Introducción de la barra de estado en la interfaz para controlar la conexión con el Robotics Backend.
+        \item Solución de problemas en el guardado del estado del editor visual de árboles de comportamiento.
+        \item Integración como submódulo de Unibotics.
+    \end{itemize}
+
+    \item \textbf{Versión 0.8.1}: migración a TS y cambio de editor.
+    \begin{itemize}
+        \item Creación de modales emergentes para mostrar errores, información o advertencias.
+        \item Migración de todo el código que estaba escrito en JS a TS.
+        \item Cambio del editor de texto de ACE\footnote{\url{https://github.com/ajaxorg/ace}} a Monaco\footnote{\url{https://github.com/microsoft/monaco-editor}}.
+    \end{itemize}
+
+    \item \textbf{Versión 0.8.2}: mejora del monitor de ejecución y mejora de documentación.
+    \begin{itemize}
+        \item Mejora de la documentación en la página web\footnote{\url{https://jderobot.github.io/bt-studio/documentation/}} con la creación de imágenes ilustrativas.
+        \item Mejora de la implementación del monitor de ejecución.
+    \end{itemize}
+
+    \item \textbf{Versión 0.8.3}: división de los universos en mundos y robots.
+    \begin{itemize}
+        \item Introducción de más funciones del editor de texto Monaco, como autocompletado o resaltado sintáctico.
+        \item División de los universos en mundos y robots.
+    \end{itemize}
+
+    \item \textbf{Aplicaciones robóticas de validación}: desarrollo de las tres aplicaciones de ejemplo propuestas, que permiten la validación de las versiones 0.7.1 en adelante. Para implementar las dos primeras soluciones me he basado en las ya existentes adaptándolas a las nuevas modificaciones que ha sufrido la herramienta. Por otra parte, para la última aplicación he utilizado paquetes externos complejos para demostrar su posible integración a las acciones de los árboles de comportamiento, así como un mayor número de nodos dentro del árbol para demostrar la escalabilidad de BT Studio, así como comprobar el correcto funcionamiento del monitor de ejecución. Estas aplicaciones están incluidas en el repositorio del proyecto para su consulta y uso. 
+    
+\end{enumerate}

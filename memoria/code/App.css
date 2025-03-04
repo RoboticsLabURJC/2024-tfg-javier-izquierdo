@@ -1,0 +1,14 @@
+:root[data-theme="light"] {
+  --background: #e8e8ed;
+  --primary: #67a0a3;
+}
+
+:root[data-theme="dark"] {
+  --background: #111116;
+  --primary: #12494c;
+}  
+
+:root {
+  --header: var(--primary);
+  --app-background: var(--background);
+}

@@ -1,0 +1,8 @@
+{
+    "name": "MiProyecto",
+    "config": {
+        "editorShowAccentColors": true,
+        "theme": "dark",
+        "btOrder": "top-to-bottom"
+    }
+}

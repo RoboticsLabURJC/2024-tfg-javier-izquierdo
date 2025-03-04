@@ -1,0 +1,54 @@
+\thispagestyle{empty} % Impide que se incluya número de página en la portada
+\begin{center}
+
+\vspace*{1cm}
+
+\includegraphics[scale=0.12]{figures/urjc_logo.png}
+
+\vspace*{2cm}
+\begin{large}
+TRABAJO FIN DE GRADO
+\end{large}
+
+\vspace*{0.1in}
+\textbf{\huge \tfgTitle}
+
+\vspace*{1cm}
+
+{\huge \tfgDegree}
+
+\vspace*{0.1in}
+
+{\large \tfgDepartment}
+
+\vspace*{1cm}
+
+\textbf{{\large Realizado por}}\\
+{\large \tfgAuthors}
+
+\vspace*{0.2in}
+
+\textbf{{\large Dirigido por}}\\
+{\large \tfgSupervisor}\\
+
+\vspace*{0.2in}
+
+\vspace*{.6in}
+\textbf{\Large Curso académico \tfgYear}
+
+\end{center}
+
+% Dedicatoria
+\ifdefined\tfgDedication
+    \newpage
+    \thispagestyle{empty}
+    
+    \vspace*{\fill}
+    \begin{center}
+    \textit{\tfgDedication}
+    \end{center}
+    \vspace*{\fill}
+\fi
+
+\clearpage\setcounter{page}{1} % Comienza a incluir números de página a partir de aquí
+\pagenumbering{roman} % En números romanos

@@ -1,0 +1,59 @@
+\chapter{Conclusiones}\label{cap:conclusiones}
+
+En este capítulo se valorarán los resultados obtenidos durante este TFG y se propondrán futuras líneas de desarrollo relacionadas. 
+
+\section{Cumplimiento de objetivos}
+
+En esta sección, se revisa el listado de objetivos propuestos en el capítulo \ref{cap:planificación} y se evalúa de manera individualizada si han sido satisfechos exitosamente. Se resume la forma en la que cada uno de los objetivos ha sido conseguido y los criterios disponibles para su correcta validación. 
+
+\subsection{Objetivo principal}
+
+El objetivo principal de este TFG era la mejora del IDE web BT Studio y su integración en la plataforma web Unibotics. Al igual que en el capítulo 2, se detalla cada uno de los subobjetivos que lo conforman por separado, indicando las competencias usadas para conseguirlos.
+
+Primero, en el capítulo \ref{cap:tecnologias}, se detallan todas las tecnologías que se han utilizado para las diferentes mejoras programadas. Estas tecnologías se pueden dividir en aquellas que he tenido que aprender a usar para realizar las mejoras (en este grupo se incluyen todas las tecnologías web y Docker) y en las que poseía un conocimiento previo gracias a mis estudios en el grado de Ingeniería Robótica de Software, como ROS2, Gazebo o los árboles de comportamiento. 
+
+
+Con respecto a los subobjetivos: 
+
+\begin{enumerate}
+
+    \item \textbf{Mejora de los elementos del Frontend para mejorar la experiencia del usuario usando REACT y TS:} se ha conseguido migrar todo el código fuente a TypeScript y se han añadido un gran número de cambios para mejorar el uso de BT Studio, estos se explican en la sección \ref{sec:bt-frontend}. Debido a esto, este objetivo se da por satisfecho. 
+  
+    \item \textbf{Adición de un monitor de ejecución para visualizar el estado de la aplicación robótica}: 
+    se ha programado usando Python para extraer el estado de esta en el Robotics Backend y creando un monitor en el frontend usando como referencia el editor de árboles. Esta implementación se detalla en la sección \ref{sec:bt-monitor}. Es por ello que este objetivo se considera adecuadamente satisfecho. 
+  
+    \item \textbf{Integración con el Robotics Backend}: para la integración completa fue necesario el cambio de la forma de lanzamiento de BT Studio, la introducción de Robotics Infrastructure como submódulo, la adición de los universos a BT Studio y múltiples modificaciones en el Robotics Application Manager. Esto junto con la ejecución dockerizada puede ser visto en distintas secciones del capítulo \ref{cap:bt-studio-avances}. Como se demuestra en el capítulo \ref{cap:validacion}, este objetivo se considera cumplido satisfactoriamente. 
+  
+    \item \textbf{Integración en Unibotics:} como se explica en la sección \ref{sec:bt-unib} y demuestra en la sección \ref{sec:bt-unib-valid}, se ha conseguido integrar en su totalidad. Es por esto que este objetivo se considera cumplido satisfactoriamente. 
+    
+    \item \textbf{Generación de aplicaciones robótics de ejemplo para validar las capacidades programadas}: tras el desarrollo de las mejoras a BT Studio, las aplicaciones propuestas (\textit{Laser Bump and Go}, \textit{Follow Person} y \textit{RoboCup Receptionist}) fueron satisfactoriamente implementadas, como se demuestra en el capítulo \ref{cap:validacion}. Por lo tanto, esto también se considera cumplido satisfactoriamente. 
+
+\end{enumerate}
+
+En vista de todas las cuestiones anteriores, el objetivo principal de este TFG se considera satisfecho en su totalidad.
+
+\subsection{Objetivos adicionales}
+
+A continuación se detallan los objetivos adicionales a los propuestos que se han podido realizar durante la duración de este TFG.
+
+\begin{enumerate}
+    \item \textbf{Cambio de editor a Monaco:} esto no estaba pensado hasta que a la mitad del TFG se añadió a Robotics Academy. Viendo la mejor experiencia de usuario que proporcionaba a la hora de desarrollar aplicaciones en Python, se decidió añadir a BT Studio como se ha indicado en la sección \ref{sec:bt-monaco}.
+    \item \textbf{Difusión internacional:} gracias al gran trabajo realizado con las mejoras descritas anteriormente, tuvimos la oportunidad de presentar la nueva versión de BT Studio ante la comunidad \textit{open source} en la primera sección de robótica de la conferencia internacional FOSDEM\footnote{\url{https://fosdem.org/2025/}} en Bruselas el día 2 de febrero de 2025.
+\end{enumerate}
+
+\section{Futuras líneas de desarrollo}
+
+A la vista del cumplimiento total de los objetivos propuestos, se considera que BT Studio es una herramienta completamente funcional y potencialmente útil para un gran número de usuarios gracias a su inclusión en Unibotics. Es por ello que las futuras líneas de desarrollo se enfocan en aumentar las capacidades de esta.
+
+Las líneas propuestas son:
+
+\begin{itemize}
+
+    \item \textbf{Bibliotecas de mundos y de robots:} ahora mismo solo se pueden seleccionar universos, que vienen predefinidos como la combinación de un mundo y un robot. El cambio sería el poder seleccionar dentro de una lista de mundos y de otra lista de robots la combinación deseada, así como permitir el cambio de robots dentro de un mismo mundo. La implementación de esto está limitada por problemas de versiones en el Robotics Backend, ya que para que esto funcione de forma correcta se necesita el simulador Gazebo Ionic que fuerza el uso de Ubuntu 24.04 y de ROS2 Jazzy.
+    
+    \item \textbf{Soporte a aplicaciones multinodo}: actualmente, las aplicaciones robóticas generadas desde BT Studio típicamente se ejecutan en un único nodo de ROS 2 y sólo pueden controlar de manera efectiva la ejecución de un comportamiento. Además, añadiendo cambios en el lanzamiento de las aplicaciones e introduciendo \textit{launchers} personalizados por los usuarios se posibilitaría la ejecución de varios nodos de ROS 2 en paralelo, así como el uso de otros paquetes externos.
+    
+    
+    \item \textbf{Soporte a aplicaciones robóticas generales multifichero}: se basaría en la creación de aplicaciones que no usen árboles de comportamiento, convirtiendo BT Studio en un editor general de aplicaciones robóticas y no solo especializado en árboles de comportamiento.
+\end{itemize}
+

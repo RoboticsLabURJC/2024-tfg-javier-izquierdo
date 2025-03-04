@@ -1,0 +1,72 @@
+% Plantilla TFG LaTeX LSI por:
+%   Agustín Borrego <borrego@us.es>
+%   Inma Hernández <inmahernandez@us.es>
+% Su uso y modificación es libre.
+
+% ̀¡Recuerda hacer copias de seguridad frecuentes durante la redacción del trabajo!
+% Puedes descargar todo el código fuente del proyecto en zip en Menú > (Descargar) Fuente
+
+\documentclass[12pt]{report}
+
+% Paquetes LaTeX y estilos globales
+\input{etc/pkgs}
+\input{etc/style}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Variables para la portada
+\setTitle{Mejoras en la herramienta BT Studio e integración en una plataforma web de programación de robots}
+\setAuthor{Javier Izquierdo Hernández} % Si hay más de un autor, separarlos con \\
+\setDegree{Grado en Ingeniería Robótica de Software} % Cambiar si es necesario
+\setSupervisor{José María Cañas \\ Óscar Martínez Martínez} % Si hay más de un tutor, separarlos con \\
+\setDepartment{Escuela de Ingeniería de Fuenlabrada}
+\setMonth{marzo} % Dejar sólo el mes de la convocatoria en que se presenta el trabajo
+\setYear{2024/2025} % Por ejemplo, 2022/23
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Dedicatoria del trabajo
+% Si no se desea incluir, comentar o borrar la línea siguiente para eliminar la página de dedicatoria
+% \setDedication{Aquí la dedicatoria del trabajo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Comienzo del documento
+\begin{document}
+
+    % Portada y secciones no numeradas
+    \input{sections/00_portada}
+    \input{sections/00_license}
+    \input{sections/00_agradecimientos}
+    \input{sections/00_resumen}
+    \input{sections/00_acronimos}
+    
+    % Índice del documento y de figuras
+    \begingroup
+        % Los enlaces son normalmente azules, pero en los índices se configuran a negro para que no aparezca todo azul
+        \hypersetup{linkcolor=black}
+        \tableofcontents
+        \listoffigures
+        \lstlistoflistings
+    \endgroup
+    
+    % Cambia el estilo de números de página de romanos a normal
+    \clearpage\pagenumbering{arabic}
+    
+    % Capítulos del trabajo
+    % \input{sections/ejemplos_borrame}
+    \input{sections/01_Introduccion}
+    \input{sections/02_OyM}
+    \input{sections/03_Fundamentos}
+    \input{sections/04_BTStudio}
+    \input{sections/05_BTStudioAvances}
+    \input{sections/06_Validacion}
+    \input{sections/07_Conclusiones}
+
+    % Bibliografía
+    \bibliographystyle{unsrtnat}
+    \bibliography{bibliografia.bib}
+        
+
+% Fin del documento
+\end{document}
